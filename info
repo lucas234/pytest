@@ -1,0 +1,17 @@
+3.2 测试顺序随机
+pip install pytest-randomly
+
+3.3. 分布式测试
+pip install pytest-xdist
+
+3.4. 出错立即返回
+pip install pytest-instafail
+
+fixture的scope参数
+scope参数有四种，分别是'function','module','class','session'，默认为function。
+
+function：每个test都运行，默认是function的scope
+class：每个class的所有test只运行一次
+module：每个module的所有test只运行一次
+session：每个session只运行一次
+
